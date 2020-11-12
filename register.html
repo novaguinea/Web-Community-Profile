@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Register</title>
+
+        <link rel="stylesheet" href="home.css">
+
+        <style>
+            h2{
+                text-align: center;
+                margin-bottom: 32px;
+            }
+
+            td{
+                font-family: 'Roboto';
+            }
+
+            input{
+                border: none;
+                border-bottom: 1px solid black;
+            }
+
+            select{
+                border: 0;
+            }
+
+            button{
+                margin: 0 auto;
+                margin-top: 20px;
+                border-radius: 10px;
+                border: 0;
+                left: 40%;
+                width: 100px;
+                height: 30px;
+                background-color: #ffd57e;
+                position: relative;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+            }
+
+            button:hover{
+                cursor: pointer;
+            }
+
+            footer{
+                
+                position: absolute;
+                bottom: 0;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="register">
+
+            <div class="nav">
+                
+                <nav>
+
+                    <a href="./homepage.html">Home</a>
+                    <a href="./aboutus.html">About Us</a>
+                    <a href="./register.html"><b>Register Now</b></a>
+
+                </nav>
+
+            </div>
+
+            <div class="regis">
+                <h2>Register Now!</h2>
+               
+                <form action="" name="formulir">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td><input type="text" name="nama" id="nama"></td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" id="male" name="sex" value="L">
+                                <label for="">Laki-Laki</label>
+                                <br>
+                                <input type="radio" id="woman" name="sex" value="P">
+                                <label for="">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Usia</td>
+                            <td>:</td>
+                            <td><input type="number" name="usia" id="second"></td>
+                            <td>tahun</td>
+                        </tr>
+                        <tr>
+                            <td>Pekerjaan</td>
+                            <td>:</td>
+                            <td><input type="text" name="pekerjaan" id="pekerjaan"></td>
+                        </tr>
+                        <tr>
+                            <td>Domisili</td>
+                            <td>:</td>
+                            <td><input type="text" name="domisili" id="domisili"></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td>:</td>
+                            <td><input type="email" name="email" id="email"></td>
+                        </tr>
+                    </table>
+                    <button type="button" onclick="display()" id="submit">Submit</button>
+                </form>
+
+            </div>
+
+
+        </div>
+
+        <script type="text/javascript">
+            function display(){
+                if( document.getElementById('submit').onclick){
+
+                    window.alert("Selamat datang di Baking Community!" +
+                            "\n Nama : " + document.formulir.nama.value +
+                            " (" + document.formulir.sex.value + ")" +
+                            "\n Usia : " + document.formulir.usia.value + " tahun " +
+                            "\n Pekerjaan : " + document.formulir.pekerjaan.value +
+                            "\n Domisili : " + document.formulir.domisili.value +
+                            "\n E-mail : " + document.formulir.email.value);
+                    
+                }
+
+            }
+        </script>
+
+    </body>
+    
+    <footer>
+        <p>&copy; 2020 Annisa Novaguinea</p>
+    </footer>
+
+</html>

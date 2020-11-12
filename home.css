@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+
+h1{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 50px;
+    font-weight: lighter;
+    letter-spacing: 8px;
+}
+
+h2{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    margin-right: 50px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+table{
+    text-decoration: none;
+}
+
+tr{
+    vertical-align: top;
+}
+
+img{
+    border-radius: 20px;
+}
+
+body{
+    margin: 0% auto;
+    background-color: white;
+}
+
+.body{
+    overflow: hidden;
+}
+
+.body{
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header{
+    padding: 100px;
+}
+
+header p{
+    font-size: 25px;
+}
+
+header img{
+    margin: 0;
+}
+
+.header{
+    background-image: url('https://parade.com/wp-content/uploads/2019/04/Citrus-Main.jpg');
+    position: relative;
+    width: 100%;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(242, 242, 242, 0.4);
+}
+
+.opening{
+    color: black;
+    position: relative;
+}
+
+.text{
+    background-color: white;
+    padding: 30px 80px 30px 80px;
+    margin: 50px 100px 30px 100px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+article{
+    text-align: justify;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+article a{
+    text-decoration: none;
+    color: black;
+}
+
+article a:hover{
+    font-weight: bold;
+}
+
+.nav{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffd57e;
+}
+
+nav{
+    padding: 20px 20px 20px 100px;
+    font-family: 'Roboto';
+    color: #ac4b1c;
+    text-align: right;
+}
+
+nav h2{
+    font-size: 20px;
+}
+
+nav a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: #ac4b1c;
+}
+
+nav a:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro{
+    background-color: white;
+    padding: 30px 80px 30px 80px;
+    margin: 50px 100px 30px 100px;
+}
+
+.regis{
+    background-color: white;
+    padding: 30px 80px 30px 80px;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 30%;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.regis:target{
+    height: 50px;
+}
+
+footer{
+    background-color: #fca652;
+    padding: 20px;
+    margin-top: 50px;
+    padding-left: 60px;
+    width: 100%;
+}
+
+footer p{
+    text-align: center;
+}
